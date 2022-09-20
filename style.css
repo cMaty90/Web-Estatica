@@ -1,0 +1,459 @@
+.html{
+ font-size: 62.5%;
+}
+
+.cabecera{
+ position: sticky;
+ border-bottom: 0.11rem solid black;
+ background-color: #EFAF48;
+}
+
+.cabecera a{
+font-family: 'Piedra', cursive;
+font-size: 1.5rem;
+margin-left: 5rem;
+}
+
+.navRes a{
+ font-size: 1.2rem;
+ font-family: 'Permanent Marker', cursive;
+ margin-left: 5rem;
+}
+
+/*---------------------main---------------------*/
+
+.icono-principal{
+ height: 80vh;
+}
+
+.principal{
+ height: auto;
+ /*background-color: #788385;*/
+ background-color: #95918B;
+}
+
+.cuadro{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(0deg);
+ animation: anim 12s infinite ease-out;
+}
+
+.cExterno{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #48464B;
+ border-radius: 50%;
+
+}
+
+.cInterno{
+ background-color: #E4DB1D;
+ border-radius: 0.5rem ;
+}
+
+.cInterno2{
+ width: auto;
+ height: auto;
+ background-color: #FFB870;
+ border-radius: 100%;
+}
+
+.img-arriba{
+ display: flex;
+ justify-content:space-between;
+}
+
+.img-abajo{
+ display: flex;
+ justify-content:space-between;
+}
+
+@keyframes anim {
+ 0%{
+  transform: translate(-50%, -50%) rotate(180deg);
+ }
+
+ 100%{
+  transform: translate(-50%, -50%) rotate(360deg);
+ }
+}
+
+/*--------------------------HISTORIA-------------------------*/
+
+.historia{
+ display: flex;
+}
+.tit-historia{
+ font-family: 'Piedra', cursive;
+}
+
+.parrafo-historia{
+ font-family: 'Anton', sans-serif;
+ margin: 0.2rem 0.2rem;
+}
+
+
+/*--------------------------FOOTER----------------------*/
+
+.pie-de-pagina{
+ display: flex;
+ flex-direction: column;
+ background-color: #CDCDCE;
+ height: auto;
+ padding-top: 2rem;
+}
+
+.redes{
+ margin-top: 1rem;
+ display: flex;
+ justify-content: center;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.redes a{
+ text-decoration: none;
+ color: #7E7E7F;
+}
+
+.firma-footer{
+ display: flex;
+ justify-content: center;
+}
+
+
+
+
+/*-------------------------RESPONSIVE------------------*/
+@media (max-width:340px){
+ .redes{
+  flex-direction: column;
+  justify-content: space-evenly;
+ }
+ .redes div{
+  margin-bottom: 0.6rem;
+ }
+}
+
+@media (min-width: 310px){
+ /*animacion*/
+ .cExterno{
+  width: 80vw;
+  height: 33vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 43vw;
+  height: 18vh;
+ }
+
+ .cInterno2 img{
+  width: 45vw;
+  height: 18vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+ }
+ /*historia*/
+ .tit-historia{
+  margin: 0 1rem;
+ }
+
+ .historia{
+  flex-direction: column;
+ }
+ .parrafo-historia{
+  margin: 0 1rem;
+ }
+
+ .fig-historia{
+  display: flex;
+  justify-content: center;
+ }
+
+ .img-historia{
+  width: 60vw;
+  height: 50vh;
+ }
+ 
+
+}
+
+@media (min-width: 390px){
+ .cExterno{
+  width: 70vw;
+  height: 40vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 40vw;
+  height: 20vh;
+ }
+
+ .cInterno2 img{
+  width: 40vw;
+  height: 20vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+ }
+}
+
+@media (min-width: 450px){
+ .cExterno{
+  width: 60vw;
+  height: 40vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 30vw;
+  height: 20vh;
+ }
+
+ .cInterno2 img{
+  width: 30vw;
+  height: 20vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+ }
+
+ /*historia*/
+ .tit-historia{
+  margin: 0 1rem;
+ }
+ .historia{
+  flex-direction: column;
+ }
+ .parrafo-historia{
+  margin: 0 1rem;
+ }
+
+
+ .fig-historia{
+  display: flex;
+  justify-content: center;
+ }
+ .img-historia{
+  width: 70vw;
+  height: 60vh;
+ }
+}
+
+@media (min-width: 590px){
+ .cExterno{
+  width: 50vw;
+  height: 40vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 25vw;
+  height: 18vh;
+ }
+
+ .cInterno2 img{
+  width: 25vw;
+  height: 20vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+ }
+}
+
+@media (min-width: 630px){
+ .cExterno{
+  width: 45vw;
+  height: 40vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 25vw;
+  height: 20vh;
+ }
+
+ .cInterno2 img{
+  width: 20vw;
+  height: 20vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+ }
+ 
+}
+
+@media (min-width: 760px){
+ .cExterno{
+  width: 40vw;
+  height: 40vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 20vw;
+  height: 20vh;
+ }
+
+ .cInterno2 img{
+  width: 20vw;
+  height: 20vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+ }
+
+ /*historia*/
+ .img-historia{
+  height: 80vh;
+ }
+}
+
+@media (min-width: 900px){
+ .cExterno{
+  width: 40vw;
+  height: 48vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 20vw;
+  height: 25vh;
+ }
+
+ .cInterno2 img{
+  width: 20vw;
+  height: 25vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+ }
+}
+
+@media (min-width: 1040px){
+ .cExterno{
+  width: 40vw;
+  height: 55vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 20vw;
+  height: 30vh;
+ }
+
+ .cInterno2 img{
+  width: 20vw;
+  height: 30vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+ }
+}
+
+@media (min-width:1100px){
+ /*historia*/
+.historia{
+ flex-direction: row;
+}
+
+ .img-historia{
+  width: 50vw;
+  margin: 0 1rem;
+ }
+ .parrafo-historia{
+  font-size: 1.2rem;
+  margin: 0 1rem;
+ }
+}
+
+@media (min-width: 1200px){
+ .cExterno{
+  width: 38vw;
+  height: 60vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 19vw;
+  height: 35vh;
+ }
+
+ .cInterno2 img{
+  width: 20vw;
+  height: 30vh;
+  border-radius: 100%;
+ }
+
+ .fp{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+ }
+
+ /*historia*/
+ .img-historia{
+  width: 40vw;
+  margin: 0 1rem;
+ }
+ .parrafo-historia{
+  font-size: 1.3rem;
+ }
+}
+
+@media(min-width:1300px){
+ .cExterno{
+  width: 35vw;
+  height: 60vh;
+  justify-content: space-around;
+ }
+
+ .cInterno{
+  width: 19vw;
+  height: 35vh;
+ }
+
+ .cInterno2 img{
+  width: 19vw;
+  height: 35vh;
+  border-radius: 100%;
+ }
+}

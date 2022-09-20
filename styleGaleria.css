@@ -1,0 +1,108 @@
+.html{
+ font-size: 62.5%;
+}
+
+.cabecera{
+ position: sticky;
+ border-bottom: 0.11rem solid black;
+ background-color: #EFAF48;
+}
+
+.cabecera a{
+font-family: 'Piedra', cursive;
+font-size: 1.5rem;
+margin-left: 5rem;
+}
+
+.navRes a{
+ font-size: 1.2rem;
+ font-family: 'Permanent Marker', cursive;
+ margin-left: 5rem;
+}
+
+/*---------------------MAIN-GALERIA---------------------*/
+.principal-galeria{
+ height: auto;
+ background-color: black;
+}
+
+.tit-galeria{
+ height: 8rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Permanent Marker', cursive;
+ color: #9180D2;
+ background-color: #9B9B9B;
+ 
+}
+
+.tit-galeria i{
+ filter: drop-shadow(3px 5px 5px #1F1E1C);
+}
+
+.grid-galeria{
+ height: 200vh;
+ border: 0.3rem solid black;
+ background-color: #DDC9FC;
+ display: grid;
+ gap: 2rem;
+ place-content: center;
+}
+
+.cuadro{
+ border:0.5rem solid black;
+ border-radius: 1rem;
+}
+
+/*-------imagenes grilla------*/
+
+.imgGrid{
+ height: 100%;
+ width: 100%;
+ border-radius: 0.5rem;
+}
+
+
+/*-------------RESPONSIVE-GRILLA--------------*/
+@media (min-width: 310px){
+ .grid-galeria{
+  height: 70%;
+  grid-template-columns: 12rem;
+  grid-template-rows: repeat(9, 18rem) ;
+ }
+}
+
+@media (min-width: 550px){
+ .grid-galeria{
+  height: 80%;
+  grid-template-columns: 12rem 12rem;
+  grid-template-rows: repeat(5, 15rem);
+ }
+}
+
+@media (min-width: 710px){
+ .grid-galeria{
+  grid-template-columns: 12rem 12rem 12rem;
+  grid-template-rows: repeat(3, 15rem);
+ }
+}
+
+@media (min-width:980px){
+ .grid-galeria{
+  height: 200vh;
+  grid-template-columns: 20rem 20rem 20rem;
+  grid-template-rows: 28rem 28rem 28rem ;
+}
+}
+
+@media (min-width:1000px){
+ .grid-galeria{
+ height: 200vh;
+ grid-template-columns: 18rem 18em 18rem;
+ grid-template-rows: 28rem 28rem 28rem ;
+}
+
+}
+
+

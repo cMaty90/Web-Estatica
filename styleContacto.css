@@ -1,0 +1,114 @@
+.html{
+ font-size: 62.5%;
+}
+
+.cabecera{
+ position: sticky;
+ border-bottom: 0.11rem solid black;
+ background-color: #EFAF48;
+}
+
+.cabecera a{
+font-family: 'Piedra', cursive;
+font-size: 1.5rem;
+margin-left: 5rem;
+}
+
+.navRes a{
+ font-size: 1.2rem;
+ font-family: 'Permanent Marker', cursive;
+ margin-left: 5rem;
+}
+
+/*----------------------MAIN CONTACTO-------------------------------*/
+
+.contacto-main{
+ background-color: #95918B;
+ height: 100vh;
+}
+
+.grilla-form{
+ height: 100vh;
+ display: grid;
+ grid-template-columns: minmax(3rem,30rem);
+ grid-template-rows: 40rem;
+ border: 0.2rem solid black;
+ place-content: center;
+ 
+}
+
+.cuadro{
+ border: 0.3rem solid #646364;
+ border-radius: 5rem;
+ background-color: #ECEAEE;
+}
+
+.miForm{
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.texto{
+ width: 15vw;
+ height: 18vh;
+}
+
+/*-------------RESPONSIVE CONTACTO--------------*/
+
+@media (min-width:310px){
+ .grilla-form{
+  margin: 0 0.8rem;
+  border: none;
+ }
+
+ .texto{
+  width: 50vw;
+  height: 20vh;
+ }
+
+ .lb{
+  margin: 0 2rem;
+ }
+
+
+}
+
+@media (min-width:630px){
+ .grilla-form{
+  margin: 0 0.8rem;
+ }
+
+ .lb{
+  margin: 0 2rem;
+ }
+
+}
+
+@media (min-width:895px){
+ 
+ .lb{
+  margin: 0 2rem;
+ }
+
+ .texto{
+ width: 40vw;
+ height: 18vh;
+}
+
+}
+
+@media (min-width:1130px){
+ 
+ .lb{
+  margin: 0 2rem;
+ }
+
+ .texto{
+ width: 30vw;
+ height: 18vh;
+}
+
+}
